@@ -32,19 +32,53 @@ css:-
 
 -----------**********----------------
 
+--=======================marquee-text Section : ============================
+    <style>
+    
+    .marquee {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, #46C0E7, #1F4E9E, #1F4E9E);
+    padding: 11px 0;
+}
+
+.marquee-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 40s linear infinite;
+    color: white;
+    font-size: 18px;
+    font-family: "Montserrat", Sans-serif;
+}
+      
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(300%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Optional: Pause animation on hover */
+        .marquee-text:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee">
+        <span class="marquee-text">
+          50 Year's
+of Quality Dairy
+Ingredients
+Manufacturing
 
 
-
-
-
-
-
-
-
-
-
-
-
+        </span>
+        
+    </div>
 
 
 
