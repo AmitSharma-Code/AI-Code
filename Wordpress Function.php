@@ -9,5 +9,11 @@ function custom_shop_banner() {
         echo '</div>';
     }
 }
+.shop-banner img {
+    width: 100%;
+    height: auto;
+    max-height: 600px; /* keeps proportion */
+    object-fit: cover;
+}
 
 
