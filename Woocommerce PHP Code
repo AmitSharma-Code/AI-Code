@@ -1,3 +1,6 @@
+
+======================================================================================================
+
 woocommerce shop page te banner image
 
 // Add banner image on WooCommerce Shop Page
@@ -10,6 +13,15 @@ function custom_shop_banner() {
     }
 }
 
+======================================================================================================
+
+// Change Related Products Title
+add_filter( 'woocommerce_product_related_products_heading', 'custom_related_products_title' );
+function custom_related_products_title( $translated ) {
+    return 'Pair it With'; // Change this text to your preferred title
+}
+
+======================================================================================================
 
 
 // Add badges after Ingredients accordion
@@ -25,6 +37,7 @@ function add_badges_after_ingredients() {
     <?php
 }
 
+======================================================================================================
 
 Disable Code All :- Scripts:-- 
 
