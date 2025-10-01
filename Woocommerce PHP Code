@@ -12,7 +12,18 @@ function custom_shop_banner() {
 
 
 
+// Add badges after Ingredients accordion
+add_action( 'woocommerce_after_product_tabs', 'add_badges_after_ingredients' );
 
+function add_badges_after_ingredients() {
+    ?>
+    <div class="product-badges-icons" style="margin-top:20px; text-align:center;">
+        <img src="https://bysache.com/wp-content/uploads/secure-payment.png" alt="Secure Payment" style="max-height:60px; margin:0 10px;">
+        <img src="https://bysache.com/wp-content/uploads/free-shipping.png" alt="Free Shipping" style="max-height:60px; margin:0 10px;">
+        <img src="https://bysache.com/wp-content/uploads/money-back.png" alt="Money Back Guarantee" style="max-height:60px; margin:0 10px;">
+    </div>
+    <?php
+}
 
 
 Disable Code All :- Scripts:-- 
