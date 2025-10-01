@@ -23,6 +23,17 @@ function custom_related_products_title( $translated ) {
 
 ======================================================================================================
 
+// Add banner image on WooCommerce Shop Page
+add_action( 'woocommerce_before_main_content', 'custom_shop_banner', 5 );
+function custom_shop_banner() {
+    if ( is_shop() ) {
+        echo '<div class="shop-banner">';
+        echo '<img src="https://bysache.com/wp-content/uploads/2025/08/new-sp.jpg" alt="Shop Banner">';
+        echo '</div>';
+    }
+}
+
+======================================================================================================
 
 // Add badges after Ingredients accordion
 add_action( 'woocommerce_after_product_tabs', 'add_badges_after_ingredients' );
