@@ -1,6 +1,6 @@
 PHP Functions  Code:-
 
-1- Feature image show the wordpress:--
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[  Feature image show the wordpress:--  ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 
 // Show featured image on single post for Hello Theme
 add_action( 'the_content', 'hello_theme_add_featured_image_single_post' );
@@ -21,7 +21,7 @@ function hello_theme_add_featured_image_single_post($content) {
 }
 
 
-2- Disable the elmentor pro plugins:-
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[  Disable the elmentor pro plugins:-  ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 
 // Disable Elementor and Elementor Pro Updates
 function disable_elementor_updates( $value ) {
@@ -51,3 +51,8 @@ function disable_elementor_kits() {
         wp_dequeue_script( 'elementor-frontend' );
     }
 }
+
+
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[  Searching the file Php_  ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+define('WP_MEMORY_LIMIT', '512M');
